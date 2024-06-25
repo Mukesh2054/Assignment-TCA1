@@ -177,15 +177,31 @@ footer{}
 }
 .box{
 	margin:10px;
-	background:rgba(255, 255, 255, 0.1);
+	background:rgba(255, 255, 255 , 0.3);
 	width:50%;
 	height:auto;
 	padding:0px;
-}
-.text{
 	display:flex;
-	flex-direction: column;
+	justify-content: space-between;
+}
+.icon{
+	width:20%;
+	height:auto;
+	background-color: transparent;
+	display:inline-flex;
+	align-items: center;
+	justify-content:space-around ;
+}
+.fa{
+	font-size: x-large;
+}
+
+.text{
+	width:80%;
+	background-color: transparent;
 	color: cyan;
+	display: inline-flex;
+	flex-direction: column;
 }
 
 .text h3{
