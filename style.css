@@ -130,7 +130,6 @@ body{
 section{
 	background-color: transparent;
 	width: 100%;
-	height:70vh;
 }
 .home{
 	background-color: transparent;
@@ -191,7 +190,7 @@ section{
 	transform: scale(0.7);
 }
 
-footer{}
+footer{background: transparent;}
 .social-media{
 	width:100%;
 	height:auto;
@@ -389,15 +388,17 @@ input[type="submit"]:hover{
   }
   .home{
   	flex-direction: column;
+  	height: 100vh;
   }
   .home-content{
   	width:100%;
-  	height:100vh;
+  	order:2;
   }
   .home-image{
   	width:100%;
-  	height: 100vh;
+  	order:1;
   }
+
   .contact{
   	width:100%;
   	height:100%;
