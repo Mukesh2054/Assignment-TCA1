@@ -1,5 +1,5 @@
 body{
-	background-image: url("C:/Users/MAC/Desktop/lightbackground.png");
+	background-image: url("lightbackground.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family:Arial, sans-serif;
@@ -180,7 +180,7 @@ section{
 .home-image{
 	width: 30%;
 	height: 70vh;
-	background-image: url("C:/Users/MAC/Desktop/Myphoto.JPG");
+	background-image: url("Myphoto.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: transform 0.3s ease;
@@ -218,7 +218,7 @@ footer{background: transparent;}
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(192, 192, 192, 0.5);
+	background-color: rgba(172, 209, 204, 0.2);
 }
 .project-heading{
 	width: 200px;
@@ -239,7 +239,7 @@ footer{background: transparent;}
 }
 
 .project-grid div{
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 153, 0.2);
 	text-align: center;
 	padding: 80px;
 	border: 1px solid darkgray;
@@ -279,7 +279,7 @@ footer{background: transparent;}
 	margin-top:20px;
 	text-align: center;
 	font-size:30px;
-	font-weight:700 px;
+	font-weight:bold;
 	color: lightpink;
 }
 
@@ -334,7 +334,7 @@ footer{background: transparent;}
 
 .text h3{
 	text-align: justify-all;
-	font-weight: 400px;
+	font-weight: bold;
 	font-size:25px;
 }
 
@@ -342,7 +342,7 @@ footer{background: transparent;}
 	text-align: justify-all;
 	margin-top:-5px;
 	font-size:20px;
-	font-weight: 200px;
+	font-weight: bold;
 }
 
 .contactform{
@@ -369,7 +369,6 @@ form{
 label{
 	margin-top:20px;
 	margin-bottom: 10px;
-	font-weigjht:400;
 	font-size:20px;
 	color:cyan;
 }
@@ -402,7 +401,117 @@ input[type="submit"]:hover{
 	background-color: limegreen;
 }
 
+/* Videodemo*/ 
+.video{
+	width:100%;
+	height: auto ;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.video h1{
+	margin-top: 50px;
+	color: orange;
+}
+.video iframe{
+	border: 1px solid red;
+	margin: 2rem auto;
+}
 
+/*sirereport*/
+.reportsection{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255,0.5) ;
+}
+
+.report-header h1{
+	display: flex;
+	justify-content: center;
+	color: orange;
+	font-size: 30px;
+	background-color: transparent;
+}
+
+.main-section{
+	padding: 20px;
+	margin:20px auto;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.7);
+}
+.main-section h3{
+	font-size : 25px;
+	text-decoration: underline;
+	color: antiquewhite;
+}
+
+.main-section p{
+	line-height: 1.6;
+	font-size: 18px;
+	text-align: justify;
+	font-style: italic;
+	color: cyan;
+}
+
+.screenshots{
+	display: flex ;
+	flex-direction: column;
+	background:  rgba(0, 0, 0, 0.3);
+}
+
+.screenshots-header{
+	display: inline-flex;
+	justify-content: center;
+	color: orange;
+}
+.screenshots-grid{
+	display:grid ;
+	background: transparent;
+	width:90%;
+	margin: 10px auto;
+	grid-template-columns: auto auto;
+	gap:20px;
+}
+.screenshots-grid div{
+	background: transparent;
+	padding:20px;
+}
+.screenshots-grid div img{
+	width:600px;
+	height:auto;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px 2px rgba(255, 255, 255,0.5);
+}
+
+.screenshots-grid div p{
+	font-size:20px;
+	text-decoration: underline;
+	color: cyan;
+	text-align: center;
+}
+
+.video-url{
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: column;
+}
+.video-url h1{
+	color:orange;
+	text-align: center;
+}
+.video-url a{
+	font-size:20px;
+	text-align: center;
+	color: antiquewhite;
+}
+
+.video-url a:hover{
+	color:black;
+	font-weight: bold;
+}
 @media screen and (max-width:700px){ 
 
   .hamburger,
@@ -468,6 +577,22 @@ input[type="submit"]:hover{
   }
   .contactform{
   	width: 100%;
+  }
+
+  .video{
+  	height: 85vh;
+  	justify-content: start;
+  }
+  .video iframe{
+  	width:700px;
+  	height:600px;
+  }
+  .screenshots-grid{
+  	width: 100%;
+  	grid-template-columns: auto;
+  }
+  .screenshots-grid div{
+  	padding:0px;
   }
 }
 
