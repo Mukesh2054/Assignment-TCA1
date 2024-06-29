@@ -413,15 +413,14 @@ input[type="submit"]:hover{
 	height: 80vh;
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 .video h1{
+	text-align: center;
 	margin-top: 50px;
 	color: orange;
 }
 .video iframe{
-	border: 1px solid red;
+	border: 1px solid white;
 	margin: 2rem auto;
 }
 
@@ -494,7 +493,7 @@ input[type="submit"]:hover{
 .screenshots-grid div p{
 	font-size:20px;
 	text-decoration: underline;
-	color: cyan;
+	color: navajowhite;
 	text-align: center;
 }
 
@@ -515,7 +514,7 @@ input[type="submit"]:hover{
 }
 
 .video-url a:hover{
-	color:black;
+	color:lightpink;
 	font-weight: bold;
 }
 
